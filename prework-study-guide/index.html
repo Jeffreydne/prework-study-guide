@@ -34,20 +34,42 @@
 
       <section class="card" id="git-section">
         <h2>Git</h2>
-        <ul>
-          <li>git init ||inside a folder to turn it into a repository</li>
-          <li>git status ||shows what branch you are on & if uncommited material present</li>
-          <li>git pull origin main || pulls in main brach with any commits</li>
-          <li>git checkout *branchname* || moves to an existing branch </li>
-          <li>git checkout -b *branchname*  || creates a new branch and switches to it</li>
-          <li>git branch || lists all branches</li>
-          <li>git branch -d *branchname* ||deletes the branch named</li>
-          <li>git git add -A || stages all changes to be commited</li>
-          <li>git git commit -m "message" || commits the staged changes and provides a note</li>
-          <li>git git merge *branchname* ||merges the branch you are currently on with the branch named</li>
-          <li>git git log || shows commit history</li>
-          <li>git restore *filename* || discards all changes since last commit</li>
-        </ul>
+        <h3>Git flow with repo( all commands inside directory unless INSIDE REPO is specified</h3>
+          <ol>
+            <li>Inside the directory for the repo of interest type "code ." to launch VS code and open the repo</li>
+            <li>"git checkout main" to go to main branch</li>
+            <li>"git checkout -b *branchname*" to create a new branch and move to it</li>
+            <ki>Now go to VSCode to make desied changes</ki>
+            <li>"git add -A" to stage any changes</li>
+            <li>'git commit -m "short note to explain changes made" ' to commit changes</li>
+            <li>"git pull origin main" to pull the most current main branch(others may have made additions)</li>
+            <li>"git push origin *branchname*" to push the commited chaanges to github</li>
+            <li>NOW GO TO GITHUB REPO-all commands will be in github repo unless noted</li>
+            <li>In github profileclick on desired repo</li>
+            <li>Click on "main" dropdown box and click on desired branch below in the dropdown.</li>
+            <li>On top bar click on "Pull requests"</li>
+            <li>Click on "New Pull Request"</li>
+            <li>Be sure that main is the base and that the desired branch is the compare on teh top bar, then add title and comments if desired and click on "create pull request"</li>
+            <li>When you receive feedback that merging is okay: click "Merge pull request"</li>
+            <li>Back in terminal "git checkout main"</li>
+            <li>then "git pull origin main"</li>
+            <li>Close issue in Github repository if applicable</li>
+          </ol>
+        <h3>Git Commands</h3>
+          <ul>
+            <li>git init ||inside a folder to turn it into a repository</li>
+            <li>git status ||shows what branch you are on & if uncommited material present</li>
+            <li>git pull origin main || pulls in main brach with any commits</li>
+            <li>git checkout *branchname* || moves to an existing branch </li>
+            <li>git checkout -b *branchname*  || creates a new branch and switches to it</li>
+            <li>git branch || lists all branches</li>
+            <li>git branch -d *branchname* ||deletes the branch named</li>
+            <li>git git add -A || stages all changes to be commited</li>
+            <li>git git commit -m "message" || commits the staged changes and provides a note</li>
+            <li>git git merge *branchname* ||merges the branch you are currently on with the branch named</li>
+            <li>git git log || shows commit history</li>
+            <li>git restore *filename* || discards all changes since last commit</li>
+          </ul>
       </section>
 
       <section class="card" id="javascript-section">
