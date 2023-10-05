@@ -101,9 +101,11 @@
           <li>We also covered variables, if statements, for loops, and functions</li>
           <li>
             For an event listener the template is:
-            const targetEl = document.querySelector(#id of element to be targeted);
-            targetEl.addEventListener("click", function() {
+            const targetEl = document.querySelector("#idName"); ie the id of element to be targeted
+            targetEl.addEventListener("click", function(*e) {
               In here is the code for what happens when element is clicked
+              * e.preventDefault();
+              *when the event is a button click on a form you need to include the e (or event) argument then use e.preventDefault() to prevent the default behaviors of submitting the form and clearing the input fields
           });
         </li>
         </ul>
