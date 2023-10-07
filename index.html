@@ -80,9 +80,9 @@
         <h2>JavaScript</h2>
         <ul>
           <li>Devdocs is a good place to go for questions about javaScrupt</li>
-          <li>You can select all of a certain element using the querySelectorAll() method and store the lists in variables as follows: const divEl = document.querySelectorAll("div")</li>
-          <li>To pick just one element use querySelector as follows: const firstP = document.querySelector("p"); will give the 1st paragrph or use the id symbol as follows: const changeP = document.querySelector("#changeP") which is the equivilent of using getElementById</li>
-          <li>You can then use these DOM variables to set various attributes as follows: changeP.setAttribute("style", "font-size: 25px; font-weight: bold; text-decoration:underline; ");</li>
+          <li>You can select all of a certain element using the <strong>querySelectorAll() method</strong> and store the lists in variables as follows: const divEl = document.querySelectorAll("div")</li>
+          <li>To pick just one element use <strong>querySelector</strong> as follows: const firstP = document.querySelector("p"); will give the 1st paragrph or use the id symbol as follows: const changeP = document.querySelector("#changeP") which is the equivilent of using getElementById</li>
+          <li>You can then use these DOM variables to <strong>set various attributes as follows:</strong> changeP.setAttribute("style", "font-size: 25px; font-weight: bold; text-decoration:underline; ");</li>
           <li>The above example set an attribute for a speicific element that was stored in a variable. To set a specific attribute when the variable stores a set of elements use bracket notation as follows(to set the 4th div elemetn to this style): divEl[3].setAttribute("style", "font-size: 40px;");</li>
           <li>You can use a for loop to loop thrugh all the div loops as follows:
             for (let i = 0; i < divEl.length; i++) {
@@ -90,7 +90,7 @@
              } </li>
              <li>
               </ol>
-              <li>To add elements to the DOM you use several steps:</li>
+              <li><strong>To add elements to the DOM</strong> you use several steps:</li>
               <li>const newEl = document.createElement("div");</li>
               <li>newEl.textContent = "This element is a div";</li>
               <li>document.body.prepend(newEl)places the new element as the 1st element of the body while using .append(newEl) puts it as the last element in the body</li>
@@ -100,11 +100,11 @@
           <li>Everything in js that is not a primative is an object, including functions and arrays</li>
           <li>We also covered variables, if statements, for loops, and functions</li>
           <li>
-            For an event listener the template is:
+            For an <strong>event listener</strong> the template is:
             const targetEl = document.querySelector("#idName"); ie the id of element to be targeted
-            targetEl.addEventListener("click", function(*e) {
+            targetEl.addEventListener("click", function(*** e) {
               In here is the code for what happens when element is clicked
-              * e.preventDefault();
+              *** e.preventDefault();
               *when the event is a button click on a form you need to include the e (or event) argument then use e.preventDefault() to prevent the default behaviors of submitting the form and clearing the input fields
           });
         </li>
