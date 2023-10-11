@@ -17,7 +17,8 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains infromation about the webpage that is not viible on the webpage</li>
+          <li>Use *** ! tab *** for template on vsCode</li>
+          <li>The head element contains information about the webpage that is not viible on the webpage</li>
           <li>The body element contains the visible content shown to the user</li>
           <li>When possible it is best to use semantic elements such as body, section and p for paragraph</li>
           <li>Nonsemantic elements include div for division and span. The span element allows in line additions tha can be given an id or class to differentiate the styling</li>
@@ -32,6 +33,13 @@
         <ul>
           <li>A good color picker is in the coding bookmarks</li>
           <li>dev docs is a good place to check out css rules</li>
+          <li>A good default setting to start css is as follows:
+            *,
+            *::before,
+            *::after {
+              box-sizing: border-box;
+            }
+          </li>
         </ul>
       </section>
 
@@ -109,8 +117,8 @@
         </li>
         <li>
           <strong>Timers:</strong>
-          <li>when you want a specific thing to happen after 1000 ms use setTimeout(() => { what you want done; }, 1000);</li>
-          <li>If you want to be able to clear the timeout then 1st ste timeout to a variable ie const timerID = setTimeout()... Then later clear with clearTimeout(timerID);</li>
+          <li>when you want a specific thing to happen after 1000 ms use let yourTimer = setTimeout(() => { what you want done; }, 1000);</li>
+          <li>Set it to a variable so you can clear the timeout then 1st set timeout to a variable ie const timerID = setTimeout()... Then later clear with clearTimeout(timerID);</li>
           <li>when you want something to happen at an interval- in this case every 1000 ms - do as follows:</li>
           <ol>
             <li>let secondsLeft = 21</li>
