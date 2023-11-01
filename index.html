@@ -34,13 +34,23 @@
           <li>A good color picker is in the coding bookmarks</li>
           <li>dev docs is a good place to check out css rules</li>
           <li>A good boilerplate setting to start css is as follows:
-            *,
-            *::before,
-            *::after {
-              box-sizing: border-box;
-              margin: 0;
-              padding: 0;
-            }
+            <pre><code>
+              *,
+              *::before,
+              *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+              }
+              html {
+                height: 100%;
+              }
+              body {
+                min-height: 100%;
+                line-height: 1;
+                font-family: Helvetica, Verdana, sans-serif;
+              }
+            </code></pre>
           </li>
         </ul>
       </section>
